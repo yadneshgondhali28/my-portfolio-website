@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background-color: #161513;
+    --header-background-color: #222;
+    --Primary-color: #fff;
+    --Primary-Gradient: linear-gradient(140deg, #FF8660 38.79%, #9A33FF 85.51%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--body-background-color);
+    color: #C5C5C5;
+}
+
+header {
+    background-color: var(--header-background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 35px;
+    color: var(--Primary-color);
+    padding: 20px 20px;
+}
+
+.logo h1>span {
+    background: var(--Primary-Gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar div {
+    padding: 30px 20px;
+}
+
+.navbar a {
+    color: var(--Primary-color);
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.avatar img {
+    width: 231px;
+    background-image: linear-gradient(to bottom right, #FF8660 38.79%, #9A33FF 85.51%), url('path/to/image');
+    border-radius: 50%;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-txt {
+    width: 656px;
+    margin: 30px auto;
+}
+
+.about-txt h1 {
+    font-size: 55px;
+    line-height: 1;
+    color: var(--Primary-color);
+}
+
+.about-txt h1>span {
+    background: var(--Primary-Gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-txt p {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.about-btn {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    width: 195px;
+    height: 64px;
+    border-radius: 50px;
+    border: 1px solid var(--Primary-color);
+    background: linear-gradient(0deg, var(--Primary-color) 0%, var(--Primary-color) 100%), var(--Primary-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.btn-secondary {
+    width: 195px;
+    height: 64px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid var(--Primary-color);
+    color: var(--Primary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
