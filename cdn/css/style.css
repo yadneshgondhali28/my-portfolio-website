@@ -168,6 +168,7 @@ a {
     background: #2A2A2A;
     margin: 20px;
     border-radius: 18px 18px 0 0;
+    overflow: hidden;
 }
 
 .project-item img {
@@ -176,8 +177,9 @@ a {
     border-radius: 18px 18px 0 0;
 }
 
-.ultraedit-image {
-    object-fit: contain;
+.project-item img:hover {
+    scale: 1.15;
+    transition: all ease 1.2s;
 }
 
 .project-title {
