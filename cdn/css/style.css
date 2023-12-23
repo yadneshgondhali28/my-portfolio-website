@@ -7,18 +7,21 @@
 :root {
     --body-background-color: #161513;
     --header-background-color: #222;
+    --defualt-color: #C5C5C5;
     --Primary-color: #fff;
     --Primary-Gradient: linear-gradient(140deg, #FF8660 38.79%, #9A33FF 85.51%);
+    --Orange-Gradient: linear-gradient(180deg, #FF8660 0%, #D5491D 100%);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--body-background-color);
-    color: #C5C5C5;
+    color: var(--defualt-color);
 }
 
 header {
     background-color: var(--header-background-color);
+    position: relative;
 }
 
 nav {
@@ -65,7 +68,7 @@ a {
 
 .avatar img {
     width: 231px;
-    background-image: linear-gradient(to bottom right, #FF8660 38.79%, #9A33FF 85.51%), url('path/to/image');
+    background-image: linear-gradient(to bottom right, #FF8660 38.79%, #9A33FF 85.51%), url('cdn\images\avatar.png');
     border-radius: 50%;
 }
 
@@ -109,6 +112,7 @@ a {
     font-size: 22px;
     font-weight: 600;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -120,4 +124,86 @@ a {
     color: var(--Primary-color);
     font-size: 22px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.learning {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.learning-langs {
+    width: 299px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.learning-langs img {
+    width: 45px;
+    cursor: pointer;
+}
+
+.primary-heading {
+    text-align: center;
+    font-size: 35px;
+}
+
+.heading-project {
+    background: var(--Orange-Gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background: #2A2A2A;
+    margin: 20px;
+    border-radius: 18px 18px 0 0;
+}
+
+.project-item img {
+    width: 390px;
+    height: 235px;
+    border-radius: 18px 18px 0 0;
+}
+
+.ultraedit-image {
+    object-fit: contain;
+}
+
+.project-title {
+    padding: 15px;
+}
+
+.project-title h3 {
+    color: var(--Primary-color);
+}
+
+footer {
+    background-color: #191919;
+}
+
+footer h2 {
+    color: var(--Primary-color);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
 }
