@@ -175,6 +175,7 @@ a {
     width: 390px;
     height: 235px;
     border-radius: 18px 18px 0 0;
+    object-fit: cover;
 }
 
 .project-item img:hover {
